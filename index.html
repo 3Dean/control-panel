@@ -65,6 +65,7 @@
 
   <audio id="buttonSound" src="audio/button.mp3"></audio>
   <audio id="switchSound" src="audio/switch.mp3"></audio>
+  <audio id="hoverSound" src="audio/button_hover.mp3"></audio>
 
   <script>
     const state = {
@@ -167,12 +168,17 @@
 
     const buttonSound = document.getElementById('buttonSound');
     const switchSound = document.getElementById('switchSound');
+    const hoverSound = document.getElementById('hoverSound');
 
     document.querySelectorAll('[data-control]').forEach(btn => {
       btn.addEventListener('click', () => {
         buttonSound.currentTime = 0;
         buttonSound.play();
         openModal(btn.dataset.control)
+      });
+      btn.addEventListener('mouseenter', () => {
+        hoverSound.currentTime = 0;
+        hoverSound.play();
       });
     });
 
