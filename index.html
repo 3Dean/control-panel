@@ -63,6 +63,9 @@
     </div>
   </div>
 
+  <audio id="buttonSound" src="audio/button.mp3"></audio>
+  <audio id="switchSound" src="audio/switch.mp3"></audio>
+
   <script>
     const state = {
       mode: 'bull',
@@ -162,11 +165,20 @@
       }
     }
 
+    const buttonSound = document.getElementById('buttonSound');
+    const switchSound = document.getElementById('switchSound');
+
     document.querySelectorAll('[data-control]').forEach(btn => {
-      btn.addEventListener('click', () => openModal(btn.dataset.control));
+      btn.addEventListener('click', () => {
+        buttonSound.currentTime = 0;
+        buttonSound.play();
+        openModal(btn.dataset.control)
+      });
     });
 
     modeToggle.addEventListener('click', () => {
+      switchSound.currentTime = 0;
+      switchSound.play();
       state.mode = state.mode === 'bull' ? 'bear' : 'bull';
       updateModeUi();
     });
