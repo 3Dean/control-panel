@@ -10,7 +10,6 @@
 
 # Build artifacts
 /build
-/dist
 /.next
 /out
 
