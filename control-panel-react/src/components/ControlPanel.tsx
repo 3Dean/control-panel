@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Screen from './Screen';
 import Knob from './Knob';
 import ToggleSwitch from './ToggleSwitch';

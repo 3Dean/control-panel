@@ -1,6 +1,5 @@
-import React from 'react';
-import ControlPanel from './components/ControlPanel.tsx';
 import './App.css';
+import ControlPanel from './components/ControlPanel';
 
 function App() {
   return (
