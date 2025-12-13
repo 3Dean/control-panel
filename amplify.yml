@@ -1,0 +1,18 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - cd control-panel-react
+        - npm ci
+    build:
+      commands:
+        - cd control-panel-react
+        - npm run build
+  artifacts:
+    baseDirectory: control-panel-react/dist
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - control-panel-react/node_modules/**/*
