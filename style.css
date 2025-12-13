@@ -38,23 +38,40 @@
     }
     .screen {
       position: absolute;
-      top: 50px;
-      left: 50px;
-      right: 50px;
-      height: 32%;
+      top: 300px;
+      left: 47px;
+      right: 43px;
+      height: 11.5%;
       overflow: hidden;
+      border-bottom-left-radius: 112px;
+      border-bottom-right-radius: 112px;
       display: grid;
       place-items: top;
       text-align: center;
       padding: 12px;
+      background: #8b788400;
     }
+
+    #animation-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+
     .amount {
-      position: relative;
+      position: absolute;
+      top: 8%;
+      left: 50%;
+      transform: translateX(-50%);
       font-family: 'Orbitron', 'Inter', system-ui, sans-serif;
       font-size: clamp(1.8rem, 3vw, 2.5rem);
       font-weight: 700;
       letter-spacing: 0.04em;
       text-shadow: 0 0 12px rgba(47, 208, 255, 0.65);
+      z-index: 2;
     }
     .mode-tag {
       width: clamp(100px, 28vw, 140px);
