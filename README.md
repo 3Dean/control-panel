@@ -23,3 +23,8 @@ This project is a single-page control panel UI built with HTML and CSS, using Go
 ## External Assets
 - **Google Fonts:** The UI uses the "Orbitron" and "Inter" fonts from Google Fonts.
 - **Images:** The project uses various images for the background, knobs, toggle switch, and LED lights, all located in the `images/` directory.
+
+## Build for Amplify
+```Powershell
+# npm run build --prefix control-panel-react
+```
