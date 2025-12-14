@@ -27,4 +27,6 @@ This project is a single-page control panel UI built with HTML and CSS, using Go
 ## Build for Amplify
 ```Powershell
 # npm run build --prefix control-panel-react
+
+# npm run dev -- --prefix control-panel-react
 ```
