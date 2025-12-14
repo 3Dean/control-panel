@@ -305,31 +305,27 @@ body {
 .btn-primary { background: linear-gradient(135deg, #2fd0ff, #5a7cff); color: #041018; box-shadow: 0 10px 20px rgba(47, 208, 255, 0.35); }
 .btn-primary:active { transform: translateY(1px); }
 
-@media (max-width: 520px) {
-  .knob-label { padding: 4px 8px; }
-  .mode-tag { padding: 8px; border-radius: 8px; }
+@media (max-width: 428px) {
+  .ui-container {
+    padding-left: 33px;
+    padding-right: 33px;
+  }
   .screen {
-    margin-top: 8%;
-    height: 42%;
+    margin-top: 63%;
+    height: 12%;
+    border-bottom-left-radius: 85px;
+    border-bottom-right-radius: 85px;
   }
   .control-grid {
-    margin-bottom: 8%;
+    margin-bottom: 38%;
+    gap: 4px;
+  }
+  .knob {
+    width: 85px;
+  }
+  .knob-label {
+    font-size: 0.55rem;
+    margin-bottom: 10px;
   }
 }
 
-@media (max-width: 420px) {
-  .screen {
-    margin-top: 12%;
-    height: 40%;
-  }
-  .control-grid {
-    margin-bottom: 12%;
-    gap: 10px;
-  }
-  .knob {
-    width: 90px;
-  }
-  .knob-label {
-    font-size: 0.5rem;
-  }
-}
