@@ -305,14 +305,14 @@ body {
 .btn-primary { background: linear-gradient(135deg, #2fd0ff, #5a7cff); color: #041018; box-shadow: 0 10px 20px rgba(47, 208, 255, 0.35); }
 .btn-primary:active { transform: translateY(1px); }
 
-@media (max-width: 428px) {
+@media (max-width: 430px) {
   .ui-container {
     padding-left: 33px;
     padding-right: 33px;
   }
   .screen {
-    margin-top: 63%;
-    height: 12%;
+    margin-top: 65%;
+    height: 11%;
     border-bottom-left-radius: 85px;
     border-bottom-right-radius: 85px;
   }
